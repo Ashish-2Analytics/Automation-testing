@@ -22,7 +22,8 @@ https://github.com/user-attachments/assets/your-video-id-here
 > 1. Drag and drop your `.mp4` / `.mov` file directly into this README while editing it on GitHub.
 > 2. Or replace the link below with your YouTube/Loom demo:
 
-[![Watch the Demo Video]((https://youtu.be/HqPL3ExmPVE))
+[![Watch the Demo Video](https://img.shields.io/badge/YouTube-Watch%20Demo%20Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/HqPL3ExmPVE))
+
 
 ---
 
