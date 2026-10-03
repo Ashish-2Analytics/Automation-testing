@@ -1,0 +1,183 @@
+======================================================================
+  TEMOUS CENTRAL — PLAYWRIGHT TEST REPORT
+  Generated: 27/9/2026, 7:51:23 pm
+======================================================================
+
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 01_e2e_happy_path.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 01: End-to-End Registration Flow
+    ────────────────────────────────────────────────────────
+      [PASS]  01. End-to-End Registration Flow (Bug Mode OFF - Happy Path)  (1.6s)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 02_bug01_subdomain_email.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 02: BUG-01 Subdomain Email Rejection
+    ────────────────────────────────────────────────────────
+      [PASS]  02. BUG-01 Detection: Subdomain Email Rejection (Bug Mode ON)  (1.0s)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 03_bug02_commerce_stream.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 03: BUG-02 Commerce Stream Reset
+    ────────────────────────────────────────────────────────
+      [PASS]  03. BUG-02 Detection: Commerce Stream Resets Class Selection (Bug Mode ON)  (995ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 04_bug03_dob_future_date.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 04: BUG-03 Future DOB Validation
+    ────────────────────────────────────────────────────────
+      [PASS]  04. BUG-03 Detection: DOB Future Date Validation (Bug Mode OFF vs ON)  (1.0s)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 05_bug04_gender_label_mismatch.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 05: BUG-04 Gender Label Mismatch
+    ────────────────────────────────────────────────────────
+      [PASS]  05. BUG-04 Detection: Gender Other Label For-Attribute Mismatch (Bug Mode ON)  (855ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 06_backend_persistence.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 06: Backend Persistence Verification
+    ────────────────────────────────────────────────────────
+      [PASS]  06. Backend Persistence Verification (Database Modal)  (905ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 07_duplicate_email_rejection.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 07: Duplicate Student Email Rejection
+    ────────────────────────────────────────────────────────
+      [PASS]  07. Duplicate Student Email Rejection           (2.0s)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 08_schema_regression_backwards_compatibility.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 08: Schema Regression & Previous Data Field Integrity
+    ────────────────────────────────────────────────────────
+      [PASS]  08. Adding new feature/field preserves previous student record data integrity  (1.4s)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 09_incomplete_form_validation.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 09: Incomplete Student Form Validation
+    ────────────────────────────────────────────────────────
+      [PASS]  09. Completing only half of student details blocks progression and prevents partial database saving  (1.4s)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 10_performance_page_load.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 10: Performance & Page Load Speed
+    ────────────────────────────────────────────────────────
+      [FAIL]  10a. Homepage loads in under 100ms [INTENTIONAL FAIL - demo]  (871ms)
+             !! Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeLessThan[2m([22m[32me
+      [PASS]  10b. Login API responds in under 1 second       (301ms)
+      [PASS]  10c. All students API responds in under 1 second  (12ms)
+      [PASS]  10d. Page has no more than 5 network requests on initial load  (1.3s)
+      [PASS]  10e. Page title is set correctly (SEO)          (736ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 11_security_login_rejection.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 11: Security ΓÇö Login Credential Rejection
+    ────────────────────────────────────────────────────────
+      [PASS]  11a. Wrong password is rejected with an error message  (862ms)
+      [PASS]  11b. Non-existent email is rejected             (790ms)
+      [PASS]  11c. Empty credentials are rejected             (762ms)
+      [PASS]  11d. 5 consecutive wrong attempts are all rejected (brute-force simulation)  (1.5s)
+      [PASS]  11e. SQL injection attempt in email field is safely rejected  (821ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 12_mobile_responsiveness.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 12: Mobile Responsiveness & Cross-Viewport
+    ────────────────────────────────────────────────────────
+      [PASS]  12. Login form is visible and usable at Mobile S (320px)  (761ms)
+      [PASS]  12. Login form is visible and usable at Mobile M (375px)  (761ms)
+      [PASS]  12. Login form is visible and usable at Mobile L (425px)  (722ms)
+      [PASS]  12. Login form is visible and usable at Tablet (768px)  (792ms)
+      [PASS]  12. Login form is visible and usable at Laptop (1024px)  (783ms)
+      [PASS]  12. Login form is visible and usable at Desktop (1440px)  (817ms)
+      [PASS]  12z. Horizontal scroll bar should NOT appear on mobile (320px)  (783ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 13_keyboard_accessibility.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 13: Keyboard Accessibility & Tab Navigation
+    ────────────────────────────────────────────────────────
+      [PASS]  13a. Login form can be fully completed via keyboard only (Tab + Enter)  (849ms)
+      [PASS]  13b. All form inputs on the login step are focusable (tabindex)  (908ms)
+      [PASS]  13c. Form inputs have labels or placeholder text for screen readers  (778ms)
+      [PASS]  13d. Submit button has descriptive text (not just an icon)  (830ms)
+      [PASS]  13e. Page has exactly one H1 heading (document structure)  (757ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 14_api_contract_verification.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 14: API Contract & Data Integrity
+    ────────────────────────────────────────────────────────
+      [PASS]  14a. POST /api/login with valid credentials returns 200 + correct user shape  (15ms)
+      [PASS]  14b. POST /api/login with wrong password returns 401  (10ms)
+      [PASS]  14c. POST /api/login with missing fields returns 400  (7ms)
+      [PASS]  14d. GET /api/students returns 200 + array of records  (9ms)
+      [PASS]  14e. GET /api/students/:id for non-existent ID returns 404  (8ms)
+      [PASS]  14f. POST /api/students without required fields returns 400  (8ms)
+      [PASS]  14g. Every student record in GET /api/students has required fields  (44ms)
+
+  ──────────────────────────────────────────────────────────
+  SUITE: 15_bug06_email_at_bypass.spec.js
+  ──────────────────────────────────────────────────────────
+
+    ────────────────────────────────────────────────────────
+    SUITE: Test 15: BUG-06 Email Validation @ Symbol Bypass
+    ────────────────────────────────────────────────────────
+      [PASS]  15a. Bug Mode OFF: email without @ is rejected with format error  (846ms)
+      [PASS]  15b. Bug Mode ON: email without @ bypasses client validation (BUG DETECTED)  (916ms)
+      [PASS]  15c. Bug Mode ON: various no-@ emails all bypass validation  (1.6s)
+      [PASS]  15d. Bug Mode ON: valid email WITH @ logs in successfully  (1.0s)
+      [PASS]  15e. Bug Mode OFF: all invalid email formats are consistently rejected  (1.2s)
+
+======================================================================
+  SUMMARY
+======================================================================
+  Total Tests : 43
+  Passed      : 42  ✓
+  Failed      : 1  ✗
+  Skipped     : 0  -
+  Pass Rate   : 97.7%  [████████████████████]
+  Duration    : 39.6s
+
+  STATUS: SOME TESTS FAILED
+  Run "npx playwright show-report" for full HTML details.
+======================================================================

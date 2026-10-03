@@ -1,0 +1,32 @@
+{
+  "name": "temous-central",
+  "version": "1.0.0",
+  "description": "Temous Central - Student Registration Portal with B&W theme, backend persistence, intentional bugs, and Playwright automation suite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:new": "npx playwright test tests/10_performance_page_load.spec.js tests/11_security_login_rejection.spec.js tests/12_mobile_responsiveness.spec.js tests/13_keyboard_accessibility.spec.js tests/14_api_contract_verification.spec.js",
+    "test:perf": "npx playwright test tests/10_performance_page_load.spec.js",
+    "test:security": "npx playwright test tests/11_security_login_rejection.spec.js",
+    "test:responsive": "npx playwright test tests/12_mobile_responsiveness.spec.js",
+    "test:a11y": "npx playwright test tests/13_keyboard_accessibility.spec.js",
+    "test:api": "npx playwright test tests/14_api_contract_verification.spec.js",
+    "dashboard": "start http://localhost:3000/test-dashboard.html"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.4",
+    "express": "^4.21.2",
+    "mssql": "^12.7.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
